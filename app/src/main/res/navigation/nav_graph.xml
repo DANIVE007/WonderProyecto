@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/imageFragment1">
+
+    <!-- Fragmento 1 -->
+    <fragment
+        android:id="@+id/imageFragment1"
+        android:name="com.example.mariowonderswitch.ImageFragment1"
+        tools:layout="@layout/fragment_image1">
+        <action
+            android:id="@+id/action_imageFragment1_to_imageFragment2"
+            app:destination="@id/imageFragment2" />
+    </fragment>
+
+    <!-- Fragmento 2 -->
+    <fragment
+        android:id="@+id/imageFragment2"
+        android:name="com.example.mariowonderswitch.ImageFragment2"
+        tools:layout="@layout/fragment_image2">
+        <action
+            android:id="@+id/action_imageFragment2_to_imageFragment1"
+            app:destination="@id/imageFragment1" />
+        <action
+            android:id="@+id/action_imageFragment2_to_imageFragment3"
+            app:destination="@id/imageFragment3" />
+    </fragment>
+
+    <!-- Fragmento 3 -->
+    <fragment
+        android:id="@+id/imageFragment3"
+        android:name="com.example.mariowonderswitch.ImageFragment3"
+        tools:layout="@layout/fragment_image3">
+        <action
+            android:id="@+id/action_imageFragment3_to_imageFragment2"
+            app:destination="@id/imageFragment2" />
+        <action
+            android:id="@+id/action_imageFragment3_to_imageFragment1"
+            app:destination="@id/imageFragment1" />
+    </fragment>
+
+</navigation>

@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Botón para regresar al fragmento anterior -->
+    <item
+        android:id="@+id/action_back"
+        android:title="Atrás"
+        android:icon="@drawable/ic_arrow_back"
+        app:showAsAction="always" />
+
+    <!-- Botón para ir al siguiente fragmento -->
+    <item
+        android:id="@+id/action_next"
+        android:title="Siguiente"
+        android:icon="@drawable/ic_arrow_forward"
+        app:showAsAction="always" />
+
+    <!-- Botón para cambiar de actividad -->
+    <item
+        android:id="@+id/action_go_next_activity"
+        android:title="Next Activity"
+        android:icon="@drawable/ic_next_activity"
+        app:showAsAction="always" />
+</menu>
